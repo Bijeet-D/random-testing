@@ -1,3 +1,8 @@
 <script>
   console.log(document.cookie);
+  //test if it can still fetch websites
+  fetch("https://example.com")
+  .then(response => response.text())
+  .then(res => console.log(res))
+  .catch(error => console.error("Error:", error));
 </script>
